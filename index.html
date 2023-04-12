@@ -14,7 +14,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint autem earum dolor corrupti animi quibusdam? Iste assumenda, labore, autem necessitatibus hic soluta inventore odit pariatur laboriosam repellendus consectetur deleniti?</p>
         <button id="service">service</button> 
     </div>
-    <div id="Main_Service">
+    <div id="service_text" style="display: none;">
         <h1>Сервисы:</h1>
         <br>
         <p><ul>
@@ -25,11 +25,14 @@
     </div>
     <script src="https://telegram.org/js/telegram-web-app.js">
         let tg = window.Telegram.WebApp;
-        let service = document.getElementById("main");
-        service.addEventListener("click", () =>{
-            document.getElementById("main").style.display = "none";
-            document.getElementById("Main_Service").style.display = "block";
-        });
+        function service(){
+            var service_btn = document.getElementById("Service");
+            var service_text = document.getElementById("service_text");
+            if(service_btn === "none"){
+                service_btn.style.display = "block";
+            }
+        }
+        
     </script>
 </body>
 </html>
