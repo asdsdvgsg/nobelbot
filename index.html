@@ -14,7 +14,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint autem earum dolor corrupti animi quibusdam? Iste assumenda, labore, autem necessitatibus hic soluta inventore odit pariatur laboriosam repellendus consectetur deleniti?</p>
         <button id="service">service</button> 
     </div>
-    <div>
+    <div id="Main_Service">
         <h1>Сервисы:</h1>
         <br>
         <p><ul>
@@ -28,6 +28,7 @@
         let service = document.getElementById("main");
         buy.addEventListener("click", () =>{
             document.getElementById("main").style.display = "none";
+            document.getElementById("Main_Service").style.display = "block";
         })
     </script>
 </body>
