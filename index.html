@@ -12,11 +12,23 @@
         <h1>Технопарк NOBEL</h1>
         <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0024/4335/brand.gif?itok=QDyFgPHi" alt="">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sint autem earum dolor corrupti animi quibusdam? Iste assumenda, labore, autem necessitatibus hic soluta inventore odit pariatur laboriosam repellendus consectetur deleniti?</p>
-        <form action="https://www.w3docs.com/">
-            <button type="submit">Click me</button> 
+        <button id="service">service</button> 
+    </div>
+    <div>
+        <h1>Сервисы:</h1>
+        <br>
+        <p><ul>
+            <li>Костоваты</li>
+            <li>Аренда помещения</li>
+            <li>коворкинг</li>
+        </ul></p>
     </div>
     <script src="https://telegram.org/js/telegram-web-app.js">
-
+        let tg = window.Telegram.WebApp;
+        let service = document.getElementById("main");
+        buy.addEventListener("click", () =>{
+            document.getElementById("main").style.display = "none";
+        })
     </script>
 </body>
 </html>
